@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradientTextView">
+        <attr name="isAnimation" format="boolean"/>
+        <attr name="type_gradient" format="enum">
+            <enum name="sliding" value="1"/>
+            <enum name="fading" value="2"/>
+            <enum name="rainbow" value="3"/>
+            <enum name="pulsating" value="4"/>
+            <enum name="wave" value="5"/>
+            <enum name="scrolling" value="6"/>
+        </attr>
+        <attr name="title_mode" format="enum">
+            <enum name="clamp" value="1"/>
+            <enum name="repeat" value="2"/>
+            <enum name="mirror" value="3"/>
+        </attr>
+        <attr name="duration" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="StylishTextView">
+        <attr name="stylish_drawable" format="reference" />
+        <attr name="android:fontFamily" />
+    </declare-styleable>
+</resources>
