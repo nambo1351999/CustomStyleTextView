@@ -22,4 +22,13 @@
         <attr name="stylish_drawable" format="reference" />
         <attr name="android:fontFamily" />
     </declare-styleable>
+
+    <declare-styleable name="GlitchTextEffect">
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="integer"/>
+        <attr name="textColors" format="reference"/>
+        <attr name="noise" format="integer" />
+        <attr name="fontLocation" format="string" />
+        <attr name="speed" format="integer" />
+    </declare-styleable>
 </resources>

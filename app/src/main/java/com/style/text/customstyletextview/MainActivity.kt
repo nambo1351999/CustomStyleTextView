@@ -33,5 +33,8 @@ class MainActivity : AppCompatActivity() {
             titleMode = Shader.TileMode.CLAMP
             repeatCountValue = ValueAnimator.REVERSE
         }
+        binding.ok.setText("HElewewr")
+        binding.ok.setTextSize(150f)
+
     }
 }

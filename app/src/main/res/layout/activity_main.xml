@@ -11,12 +11,12 @@
         android:id="@+id/gradient_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/font1"
         android:text="@string/app_name"
         android:textSize="32sp"
         app:duration="3000"
         app:fontWeight="900"
         app:isAnimation="true"
-        android:fontFamily="@font/font1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -24,10 +24,31 @@
         app:type_gradient="fading" />
 
     <com.style.text.lib.StylishTextView
+        android:id="@+id/stylish_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:stylish_drawable="@drawable/background1"
         android:fontFamily="@font/font1"
-        app:layout_constraintTop_toBottomOf="@+id/gradient_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/gradient_text_view"
+        app:stylish_drawable="@drawable/background1" />
+
+    <com.style.text.lib.GlitchTextEffect
+        android:id="@+id/glitch_text_effect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/stylish_text_view"
+        app:noise="6"
+        app:speed="70"
+        app:text="ARCADE"
+        app:textColors="@array/glitch_colors"
+        app:textSize="70" />
+
+
+    <com.style.text.lib.GlitchTextView
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/glitch_text_effect"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
